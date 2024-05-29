@@ -5,10 +5,9 @@ import { AuthModule, LogLevel } from 'angular-auth-oidc-client';
 @NgModule({
     imports: [AuthModule.forRoot({
         config: {
-            authority: 'https://dev-wwbp3y6voragrwqe.us.auth0.com',
+            authority: '',
             redirectUrl: 'http://localhost:4200/callback',
-            //redirectUrl: window.location.origin,
-            clientId: 'difX5oVgXAWI5ja3ps1vQFV3KKYYNrPn',
+            clientId: '',
             scope: 'openid profile offline_access email',
             responseType: 'code',
             silentRenew: true,
